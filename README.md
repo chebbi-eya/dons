@@ -1,4 +1,5 @@
 # Donsprojet
+**Description :** Conception et développement d'un site web dynamique pour collecte les dons en utilisant les frameworks Angular et Spring Boot.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
