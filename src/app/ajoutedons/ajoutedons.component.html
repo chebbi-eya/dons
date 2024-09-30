@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+</head>
+<body>
+  <div class="container">
+    <img src="assets/image/donss.jpg" alt="Image de présentation">
+    <form class="form" action="" [formGroup]="forminput">
+      <div class="descr">Contact us</div>
+      <div class="input-row">
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="nom">
+          <label for="name">Nom</label>
+        </div>
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="descripmin">
+          <label for="name">desc</label>
+        </div>
+      </div>
+      <div class="input">
+        <input required="" autocomplete="off" type="text"  formControlName="descrip">
+        <label for="name">tel</label>
+    </div>
+    
+    
+     
+    <div class="input">
+        <select    required="" autocomplete="off" id="categorie" name="categorie"  formControlName="categorie">
+      <option value="vetement">Vêtement</option>
+      <option value="meuble">Meuble</option>
+      <option value="bricolage">bricolage</option>
+      <option value="jouet">jouet</option>
+      <option value="autre">autre</option>
+      <!-- Ajoutez d'autres options de catégorie si nécessaire -->
+    </select>
+      <label for="categorie">E-mail</label>
+      </div>
+        <div class="input">
+          <input required="" autocomplete="off" type="text"  formControlName="Hauteur">
+          <label for="name">mot de passe</label>
+      </div>
+      
+      <div class="input-row">
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="profondeur">
+          <label for="name">pays</label>
+        </div>
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="largeur">
+          <label for="name">ville</label>
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="Pays">
+          <label for="name">code postal</label>
+        </div>
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="Ville">
+          <label for="name">adresse</label>
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="urlimage">
+          <label for="name">code postal</label>
+        </div>
+        <div class="input">
+          <input required="" autocomplete="off" type="text" formControlName="date">
+          <label for="name">adresse</label>
+        </div>
+      </div>
+      <!-- ... autres rangées de champs ... -->
+      
+      <div class="form-section">
+        <button type="submit" class="btn btn-primary" (click)="register()">enregistrer →</button>
+      </div>
+      <div class="form-section">
+        <p>J'ai deja un compte? <a routerLink="/signup">signin</a> </p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+
+       <!-- Conteneur principal 
+      <button >Sign In</button>
+      <input type="submit" (click)="onsubmit()"value=signin>
+  </form>-->
+
+
+
+
+  <!--
+
+    
+  <div class="form-section">
+    <button type="submit" class="btn btn-primary" (click)="register()">sign up</button>
+  </div>
+
+
+<div>
+  <input type="submit" value="incrementer" (click)="incrementer()">
+  {{counter}}
+</div>
+-->
+

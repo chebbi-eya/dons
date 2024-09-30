@@ -1,0 +1,146 @@
+
+.container form .descr {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e8e8e8;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+  margin-right: 4cm;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input, textarea {
+  margin: 1em 0 1em 0;
+  width: 300px;
+  position: relative;
+}
+
+.input input, textarea {
+  font-size: 100%;
+  padding: 0.7em;
+  outline: none;
+  color: #e8e8e8;
+  border: none;
+  border-bottom: 2px solid #e8e8e8;
+  background: transparent;
+  border-radius: none;
+  width: 100%;
+  resize: none;
+}
+
+.input label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  color: #e8e8e8;
+  padding: 0.7em;
+  margin-left: 0.1em;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.input :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
+
+.input textarea:focus ~ label,
+.input textarea:valid ~ label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(37, 37, 211);
+}
+
+.form button {
+  color: #e8e8e8;
+  font-size: 15px;
+  align-self: flex-start;
+  padding: 0.6em;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.form button:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form button:hover:before {
+  opacity: 0.2;
+}
+
+.form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+img {
+  margin-top: -1px; /* Converti depuis 1cm (environ) en pixels */
+  height: 450px;
+  width: 210px;
+  margin-left: 0; /* Supprime la marge gauche de l'image */
+  margin-right: 3cm;
+}
+
+.container {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  
+  background: linear-gradient(to right, #005c97, #363795);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 3cm;
+  margin-top: 3cm;
+  padding-left: 0; /* Supprime le remplissage à gauche */
+  margin-left: 120px; /* Ajuste la marge gauche du conteneur */
+}
+
+.container form {
+  width: 50%;
+  margin-left: 1cm; /* Ajuste la marge gauche du formulaire */
+  /* Le reste de votre CSS pour le formulaire reste inchangé */
+}
+
+.container img {
+  height: 13.9cm;
+  width: 60%; /* Occupe la totalité de l'espace disponible dans le conteneur */
+  object-fit: cover;
+  margin-left: 0; /* Supprime la marge gauche de l'image */
+}
+.form-section{
+  color: #f8efef;
+}
+.form-section a{
+color: #8bcdf6;
+}
+
+
+

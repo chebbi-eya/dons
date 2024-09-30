@@ -1,0 +1,29 @@
+{
+  "utilisateur": [
+    {
+      "iduser": 1,
+      "nom": "chebbi",
+      "prenom": "eya",
+      "tel": "22347766",
+      "email": "eya.chebbi@gmail.com",
+      "mdp": "123",
+      "Pays": "tunisie",
+      "ville": "ben arous",
+      "Codepos": "12345",
+      "adresse": "ben arous"
+    },
+    {
+      "iduser": 2,
+      "nom": "chebbi",
+      "prenom": "chebbi",
+      "tel": "11222333",
+      "email": "eya123.chebbi@gmail.com",
+      "mdp": "123dfg",
+      "Pays": "tunisie",
+      "ville": "ben arous",
+      "Codepos": "12345",
+      "adresse": "ben arous"
+    }
+  
+  ]
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Sign Up</title>
+</head>
+<body>
+  
+    <div class="container">
+              <img src="assets/image/donss.jpg" alt="Image de présentation">
+
+        <form class="form" action="" [formGroup]="forminput">
+            <div class="descr">Contact us</div>
+            <div class="input">
+                <input required="" autocomplete="off" type="text"  formControlName="nom">
+                <label for="name">Nom</label>
+            </div>
+
+            <div class="input">
+                <input required="" autocomplete="off" name="email" type="text" formControlName="email">
+                <label for="email">E-mail</label>
+                <div class="alert alert-danger" role="alert"*ngIf="this.forminput.controls['email'].errors?.['email'] && !this.forminput.pristine">
+                  email required!!!
+                  </div>
+                
+                  <div class="alert alert-danger" role="alert"*ngIf="this.forminput.controls['email'].errors?.['email']&& !this.forminput.pristine">
+                    email syntax est incorrecte!!!
+                  </div>
+             
+            </div>
+
+            <div class="input">
+                <input required="" cols="30" rows="1" id="message" formControlName="mdp">
+                <label for="message">Mot de passe</label>
+                <div class="alert alert-danger" role="alert"*ngIf="this.forminput.controls['email'].errors?.['email'] && !this.forminput.pristine">
+                  mot de passe required!!!
+                  </div>
+            </div>
+            <button type="submit" (click)="onsubmit()"  >Sign In →</button>
+       
+            <div class="form-section">
+              <p>je n'ai pas de compte? <a  routerLink="/signup2">Sign Up</a> </p>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
+
+       <!-- Conteneur principal 
+      <button >Sign In</button>
+      <input type="submit" (click)="onsubmit()"value=signin>
+  </form>-->
+
+
+

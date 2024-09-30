@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <table class="table">
+        <thead>
+          <tr >
+            <th scope="col">#</th>
+            <th scope="col">nom</th>
+            <th scope="col">prenom</th>
+            <th scope="col">tel</th>
+            <th scope="col">email</th>
+            <th scope="col">pays</th>
+            <th scope="col">ville</th>
+            <th scope="col">poste</th>
+            <th scope="col">adresse</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of  listusr ">
+            <th scope="row">{{i.iduser}}</th>
+            <td>{{i.nom}}</td>
+            <td>{{i.prenom}}</td>
+            <td>{{i.tel}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.Pays}}</td>
+            <td>{{i.ville}}</td>
+            <td>{{i.Codepos}}</td>
+            <td>{{i.adresse}}</td>
+          </tr>
+          <tr>
+       
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<table>
+    <tr *ngFor="let i of list">
+
+        <td>
+          {{i}}
+        </td>
+    </tr>
+</table>
+  -->  
+</body>
+</html>
